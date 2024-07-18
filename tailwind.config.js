@@ -1,7 +1,8 @@
 module.exports = {
   content: [
-    './src/**/*.{html,js,css}', // Include all CSS, HTML, and JS files in src directory
+    './src/**/*.{html,js}', // Include all HTML and JS files in src directory
     './index.html', // Include the main HTML file
+    './node_modules/flowbite/**/*.js', // include Flowbite
   ],
   theme: {
     extend: {
@@ -15,7 +16,7 @@ module.exports = {
       },
       colors: {
         primary: {
-          'bright-red': 'hsl(12, 88%, 59%)',
+          'bright-red': 'hsl(12, 88%, 50%)',
           'dark-blue': 'hsl(228, 39%, 23%)',
         },
         neutral: {
@@ -29,9 +30,12 @@ module.exports = {
         BeVietnamPro: ['Be Vietnam Pro', 'sans-serif'],
       },
       screens: {
-        '2xl': '1372px', // Custom breakpoint for 1372px
+        sm: '480px',
+        md: '768px',
+        lg: '976px',
+        xl: '1440px',
       },
     },
   },
-  plugins: [],
+  plugins: [require('flowbite/plugin')],
 };

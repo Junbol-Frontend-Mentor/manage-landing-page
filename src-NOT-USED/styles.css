@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+section,
+header {
+  padding: 0;
+  margin: 0;
+}
+
+/* Your custom styles */
+body,
+section,
+header {
+  padding: 0;
+  margin: 0;
+}
+
+/* QUERY FOR MOBILE FIRST */
+html,
+body {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url('../assets/images/bg-tablet-pattern.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  z-index: 0;
+}
+
+
+
+main {
+  z-index: 1;
+}

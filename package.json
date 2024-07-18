@@ -4,9 +4,20 @@
   "description": "This is a solution to the [Manage landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/manage-landing-page-SLXqC6P5). Frontend Mentor challenges help you improve your coding skills by building realistic projects.",
   "main": "tailwind.config.js",
   "scripts": {
+    "build": "tailwindcss -i ./input.css -o ./dist/output.css --minify",
+    "watch": "tailwindcss -i ./input.css -o ./dist/output.css --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "tailwindcss": "^3.4.5"
+  },
+  "dependencies": {
+    "bite": "^0.1.0-4",
+    "flow": "^0.2.3",
+    "flowbite": "^2.4.1"
+  }
 }
