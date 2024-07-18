@@ -25,8 +25,8 @@ This is a solution to the [Manage landing page challenge on Frontend Mentor](htt
 
 ### Links
 
-- Solution URL: (https://github.com/Junbol-Frontend-Mentor/3-column-preview-card-component)
-- Live Site URL: (https://junbol-frontend-mentor.github.io/3-column-preview-card-component/)
+- Solution URL: (https://github.com/Junbol-Frontend-Mentor/manage-landing-page)
+- Live Site URL: (https://junbol-frontend-mentor.github.io/manage-landing-page/)
 
 ## My process
 
@@ -39,10 +39,11 @@ This is a solution to the [Manage landing page challenge on Frontend Mentor](htt
 -GIT/GitHub
 -PowerShell Command line
 -Tailwind
+-Flowbite
 
 ### What I learned
 
-Working more with Tailwind
+Working more with Tailwind + Flowbite
 
 ```
 
@@ -50,7 +51,7 @@ Working more with Tailwind
 
 ### Continued development
 
-I would like to continue studying responsive CSS and animation, transitions and FX like parallax.
+
 
 ### Useful resources
 
