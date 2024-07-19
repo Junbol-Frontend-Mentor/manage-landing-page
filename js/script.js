@@ -1,5 +1,3 @@
-
-
 document.addEventListener('DOMContentLoaded', function () {
   console.log('JavaScript file is connected');
 
@@ -27,8 +25,8 @@ document.addEventListener('DOMContentLoaded', function () {
     defaultPosition: 0,
     interval: 3000,
     indicators: {
-      activeClasses: 'bg-red-500 dark:bg-gray-800', // Active dot classes
-      inactiveClasses: 'bg-red-300 dark:bg-gray-800/50 hover:bg-red-500', // Inactive and hover dot classes
+      activeClasses: 'bg-red-500 dark:bg-gray-800',
+      inactiveClasses: 'bg-red-300 dark:bg-gray-800/50 hover:bg-red-500',
       items: [
         { position: 0, el: document.querySelector('[data-carousel-slide-to="0"]') },
         { position: 1, el: document.querySelector('[data-carousel-slide-to="1"]') },
@@ -38,8 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
     },
   };
 
-  import('flowbite').then(({ Carousel }) => {
+  import('https://unpkg.com/flowbite@1.3.1/dist/flowbite.js').then(({ Carousel }) => {
     const carousel = new Carousel(carouselElement, items, options);
   }).catch(error => console.error('Error loading Flowbite:', error));
-  
 });
