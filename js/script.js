@@ -34,16 +34,5 @@ document.addEventListener('DOMContentLoaded', function () {
     },
   };
 
-  const loadFlowbite = () => {
-    const script = document.createElement('script');
-    script.src = 'https://unpkg.com/flowbite@1.3.1/dist/flowbite.js';
-    script.onload = () => {
-      const { Carousel } = window.flowbite;
-      const carousel = new Carousel(carouselElement, items, options);
-    };
-    script.onerror = (error) => console.error('Error loading Flowbite:', error);
-    document.head.appendChild(script);
-  };
-
-  loadFlowbite();
+  const carousel = new flowbite.Carousel(carouselElement, items, options);
 });
