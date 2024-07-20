@@ -11,7 +11,36 @@ document.addEventListener('DOMContentLoaded', function () {
     nav.classList.toggle('hidden');
   });
 
+  //---- Form Validation -------------
+
+  const form = document.getElementById('newsletterForm'); // 🟢
+  const emailInput = document.getElementById('email');
+  const errorMessage = document.getElementById('error-message'); //
+
+  form.addEventListener('submit', function (event) {
+    event.preventDefault(); // Prevent the form from submitting normally
+
+    const email = emailInput.value;
+    errorMessage.textContent = ''; // Clear any previous error message
+
+    if (!email) {
+      errorMessage.textContent = 'Please enter your email address.'; //
+    } else if (!validateEmail(email)) {
+      errorMessage.textContent = 'Please enter a valid email address.'; //
+    } else {
+      console.log('Form submitted successfully');
+      // Add your form submission logic here
+    }
+  });
+
+  function validateEmail(email) {
+    // validation
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(String(email).toLowerCase());
+  }
 });
+
+//------  Carousel Logic --------------
 
 let slideIndex = 1;
 showSlides(slideIndex);
