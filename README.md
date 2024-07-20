@@ -39,7 +39,6 @@ This is a solution to the [Manage landing page challenge on Frontend Mentor](htt
 -GIT/GitHub
 -PowerShell Command line
 -Tailwind
--Flowbite
 
 ### What I learned
 
@@ -50,8 +49,6 @@ Working more with Tailwind + Flowbite
 ```
 
 ### Continued development
-
-
 
 ### Useful resources
 
