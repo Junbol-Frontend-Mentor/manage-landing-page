@@ -111,18 +111,19 @@ body {
 /* -------   Slideshow container  -------------- */
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+  max-width: 1000px;/* Maximum width of the slideshow */
+  position: relative;/* Enables absolute positioning of inner elements */
+  margin: auto;/* Centers the slideshow horizontally */
 }
 
-/* Hide the images by default */
+/* Slide show format*/
 .mySlides {
   width: 100%;
   height: 12rem;
-  display: none;
+  display: none; /* Hide all slides by default */
 }
 
+/* The .prev class does not need an explicit left: 0; because it will default to the left side if not specified otherwise. This is due to the absolute positioning and the absence of left/right properties, making it align to the left edge of its containing block. */
 /* Next & previous buttons */
 .prev,
 .next {
@@ -130,14 +131,14 @@ body {
   position: absolute;
   top: 50%;
   width: auto;
-  margin-top: -22px;
+  margin-top: -22px;/* Centers the buttons vertically */
   padding: 16px;
   color: red;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
-  user-select: none;
+  user-select: none;/* Prevents text selection */
 }
 
 /* Position the "next button" to the right */
@@ -164,6 +165,7 @@ body {
 }
 
 /* Number text (1/3 etc) */
+/* Left is not specified, so it defaults to the left edge */
 .numbertext {
   color: black;
   font-size: 12px;
@@ -177,10 +179,10 @@ body {
   cursor: pointer;
   height: 15px;
   width: 15px;
-  margin: 0 2px;
+  margin: 0 2px;/* Margin between dots */
   background-color: #bbb;
   border-radius: 50%;
-  display: inline-block;
+  display: inline-block;/* Inline-block for alignment */
   transition: background-color 0.6s ease;
 }
 
